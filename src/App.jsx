@@ -70,7 +70,7 @@ class App extends Component {
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.formSubmitData} />
         <h2>Contacts</h2>
-        <Filter value={filter} onFilterInputValue={this.visibleContacts} />
+        <Filter value={filter} onFilterInputValue={this.onFilterInputValue} />
         <ContactList contacts={contacts} deleteContact={this.deleteContact} />
       </div>
     );
